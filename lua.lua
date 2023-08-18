@@ -1,12 +1,12 @@
 --Services
-local PlayerService = cloneref(game:GetService("Players"))
-local RunService = cloneref(game:GetService("RunService"))
-local ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"))
+PlayerService = cloneref(game:GetService("Players"))
+RunService = cloneref(game:GetService("RunService"))
+ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"))
 
 --Variables
-local LocalPlayer = cloneref(PlayerService.LocalPlayer)
-local Character = cloneref(LocalPlayer.Character)
-local Backpack = cloneref(LocalPlayer.Backpack)
+LocalPlayer = cloneref(PlayerService.LocalPlayer)
+Character = cloneref(LocalPlayer.Character)
+Backpack = cloneref(LocalPlayer.Backpack)
 
 function randomString()
 	local length = math.random(10,20)
