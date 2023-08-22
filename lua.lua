@@ -8,7 +8,7 @@ LocalPlayer = cloneref(PlayerService.LocalPlayer)
 Character = cloneref(LocalPlayer.Character)
 Backpack = cloneref(LocalPlayer.Backpack)
 
-function GetDistance(p1,p2)
+local function GetDistance(p1,p2)
     local Distance = (p1.Position - p2.Position).magnitude
     return Distance
 end
