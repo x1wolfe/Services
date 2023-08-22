@@ -8,12 +8,9 @@ LocalPlayer = cloneref(PlayerService.LocalPlayer)
 Character = cloneref(LocalPlayer.Character)
 Backpack = cloneref(LocalPlayer.Backpack)
 
-for i,AllPlayers in pairs(PlayerService:GetChildren()) do
-    print(v)
-    end
-
-for i,AllCharacters in pairs(PlayerService.Character:GetDescendant()) do
-	print(v)
+function GetDistance(p1,p2)
+    local Distance = (p1.Position - p2.Position).magnitude
+    return Distance
 end
 
 function randomString()
