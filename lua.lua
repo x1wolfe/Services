@@ -3,6 +3,7 @@ PlayerService = cloneref(game:GetService("Players"))
 RunService = cloneref(game:GetService("RunService"))
 ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"))
 MarketplaceService = cloneref(game:GetService("MarketplaceService"))
+InsertService = cloneref(game:GetService("InsertService"))
 
 --Variables
 LocalPlayer = cloneref(PlayerService.LocalPlayer)
