@@ -2,6 +2,7 @@
 PlayerService = cloneref(game:GetService("Players"))
 RunService = cloneref(game:GetService("RunService"))
 ReplicatedStorage = cloneref(game:GetService("ReplicatedStorage"))
+MarketplaceService = cloneref(game:GetService("MarketplaceService"))
 
 --Variables
 LocalPlayer = cloneref(PlayerService.LocalPlayer)
@@ -11,6 +12,10 @@ Backpack = cloneref(LocalPlayer.Backpack)
 function GetDistance(p1,p2)
     local Distance = math.round((p1.Position - p2.Position).magnitude)
     return Distance
+end
+
+function GetGameName()
+	return MarketplaceService:GetProductInfo(game.PlaceId).Name
 end
 
 function randomString()
