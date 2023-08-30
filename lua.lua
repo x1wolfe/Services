@@ -32,9 +32,9 @@ function GetClosestPlayer(distance)
 	for i,v in pairs(PlayerService:GetPlayers()) do
 	if v.Name ~= LocalPlayer.Name then
 		local char = v.Character
-	 if char and GetDistance(Character.HumanoidRootPart,char.HumanoidRootPart) <= distance then
-		 return char
+ 	 if char.Humanoid.Health ~= 0 and GetDistance(Character.HumanoidRootPart,char.HumanoidRootPart) <= distance then
+return char
 	 end
 	end
 	end
-	end	
+	end
