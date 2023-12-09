@@ -20,7 +20,7 @@ function GetGameName()
 	return MarketplaceService:GetProductInfo(game.PlaceId).Name
 end
 
-function randomString()
+function RandomString()
 	local length = math.random(10,20)
 	local array = {}
 	for i = 1, length do
