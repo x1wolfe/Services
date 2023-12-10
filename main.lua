@@ -21,15 +21,6 @@ function GetGameName()
 	return MarketplaceService:GetProductInfo(game.PlaceId).Name
 end
 
-function RandomString()
-	local length = math.random(10,20)
-	local array = {}
-	for i = 1, length do
-		array[i] = string.char(math.random(32, 126))
-	end
-	return table.concat(array)
-end
-
 function GetClosestPlayer(distance)
 	for i,v in pairs(PlayerService:GetPlayers()) do
 	if v.Name ~= LocalPlayer.Name then
