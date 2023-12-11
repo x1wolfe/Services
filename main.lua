@@ -12,6 +12,7 @@ Character = cloneref(LocalPlayer.Character)
 Backpack = cloneref(LocalPlayer.Backpack)
 Mouse = cloneref(LocalPlayer:GetMouse())
 
+--Functions
 function GetDistance(p1,p2)
     local Distance = math.round((p1.Position - p2.Position).magnitude)
     return Distance
