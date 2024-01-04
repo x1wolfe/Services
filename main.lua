@@ -28,7 +28,8 @@ function GetClosestPlayer(distance,from,to)
 	if v.Name ~= LocalPlayer.Name then
 		local Target = v.Character:FindFirstChild(to)
  	 if GetDistance(from,Target) <= distance then
-return char
+
+return v.Character
 	 end
 	end
 	end
